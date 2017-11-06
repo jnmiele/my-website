@@ -11,6 +11,13 @@ const ProjectModal = (props) => {
     }
   }
 
+  function displayBullets() {
+    if (props.bullets && props.bullets.length > 0) {
+      const details = props.bullets.map((bullet, index) => <li key={index}> {bullet} </li>)
+      return details
+    }
+  }
+  
   return (
     <Modal 
     trigger={<Button id='open-modal' onClick={handleClick}>{props.name}</Button>}
@@ -22,6 +29,7 @@ const ProjectModal = (props) => {
         <Modal.Description>
           <Header>Default Profile Image</Header>
           <p>{props.description}</p>
+          <ul> {displayBullets()} </ul>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>

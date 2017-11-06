@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectModal from './ProjectModal'
+import { projects } from '../data/projects'
 
 class Projects extends React.Component {
   state = {
@@ -30,29 +31,6 @@ class Projects extends React.Component {
   }
 
   render() {
-    const projects = [
-      {
-        name: 'Flatgram',
-        description: '',
-        github: '',
-        tools: ['Ruby', 'Ruby on Rails', 'Semantic-UI'],
-        url: 'youtubeurl'
-      },
-      {
-        name: 'The Spots',
-        description: '',
-        github: '',
-        tools: ['Ruby', 'Ruby on Rails', 'JavaScript', 'React', 'Yelp Search API'],
-        url: 'youtubeurl2'
-      },
-      {
-        name: 'Hitchhiker',
-        description: '',
-        github: '',
-        tools: ['Ruby', 'Ruby on Rails', 'JavaScript', 'React', 'Redux', 'Google Maps API'],
-        url: 'youtubeurl3'
-      }
-    ]
 
     let modals = projects.map((project, index) => {
       switch (index+1) {
