@@ -17,6 +17,13 @@ const ProjectModal = (props) => {
       return details
     }
   }
+
+  function displayWebTools() {
+    if (props.tools && props.tools.length > 0) {
+      const tools = props.tools.map((tool, index) => <li key={index}> {tool} </li>)
+      return tools
+    }
+  }
   
   return (
     <Modal 
@@ -27,9 +34,12 @@ const ProjectModal = (props) => {
       <Modal.Content image scrolling>
         <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
         <Modal.Description>
-          <Header>Default Profile Image</Header>
+          <Header>Description</Header>
           <p>{props.description}</p>
-          <ul> {displayBullets()} </ul>
+          <ul>{displayBullets()}</ul>
+          <p>Web Tools Utilized:</p>
+          <ul>{displayWebTools()}</ul>
+          <p> Code available on <a href={props.github} target='_blank'>github</a></p>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
