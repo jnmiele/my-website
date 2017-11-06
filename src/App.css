@@ -26,3 +26,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+#description {
+  margin: auto;
+  margin-top: 5%;
+  overflow: scroll;
+  height: 85vh;
+  width: 40%;
+  font-size: 1.5em;
+  border: solid .02em;
+}
