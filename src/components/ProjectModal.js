@@ -24,10 +24,10 @@ const ProjectModal = (props) => {
       return tools
     }
   }
-  
+ 
   return (
     <Modal 
-    trigger={<Button data-name='open-modal' onClick={handleClick}>{props.name}</Button>}
+    trigger={<img src={require(`../${props.image}`)} className='project-image' data-name='open-modal' onClick={handleClick} alt={props.name}/>}
     open={props.open}
     >
       <Modal.Header>{props.name}</Modal.Header>

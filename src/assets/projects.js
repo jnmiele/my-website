@@ -5,7 +5,8 @@ const projects = [
         bullets: ['Utilized RESTful routing to provide users with with full CRUD capabilities.', 'Prevented unauthorized users from viewing restricted content by incorporating user-password authorization.'],
         github: 'https://github.com/flatiron-lessons/flatgram',
         tools: ['Ruby', 'Ruby on Rails', 'Semantic-UI'],
-        url: 'youtubeurl'
+        url: 'youtubeurl',
+        image: 'images/uc.jpg'
       },
       {
         name: 'The Spots',
@@ -13,7 +14,8 @@ const projects = [
         bullets: ['Built back-end using Ruby on Rails that stored user credentials and spots via a PostgreSQL database.', 'Used JSON Web Tokens (JWT) to prevent unauthorized users from viewing restricted content.', 'Provided users with the ability to search for specific restaurants via the Yelp Search API.'],
         github: 'https://github.com/jnmiele/restaurant-tracker',
         tools: ['Ruby', 'Ruby on Rails', 'JavaScript', 'React', 'Yelp Search API'],
-        url: 'youtubeurl2'
+        url: 'youtubeurl2',
+        image: 'images/hh.png'
       },
       {
         name: 'Hitchhiker',
@@ -21,7 +23,8 @@ const projects = [
         bullets: ['Created a single-page application using React and Redux for the front-end.', 'Utilized a mix of Semantic UI and custom styling to build an interactive user interface.'],
         github: 'https://github.com/jnmiele/final-project',
         tools: ['Ruby', 'Ruby on Rails', 'JavaScript', 'React', 'Redux', 'Google Maps API'],
-        url: 'youtubeurl3'
+        url: 'https://www.youtube.com/watch?v=_01dFqcXElM',
+        image: 'images/hh.png'
       }
     ]
 

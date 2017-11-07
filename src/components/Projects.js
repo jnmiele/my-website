@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectModal from './ProjectModal'
-import { projects } from '../data/projects'
+import { projects } from '../assets/projects'
 
 class Projects extends React.Component {
   state = {

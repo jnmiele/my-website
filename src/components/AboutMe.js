@@ -10,6 +10,8 @@ const AboutMe = () => {
 				<span>for programming aiming to help businesses improve their bottom line</span><br/> 
 				<span>by creating interactive products that drive sales and customer satisfaction. </span><br/>
 			</p>
+
+			insert projects here as well
 			<p>__ __ __</p>
 			<h3> Extended Version </h3>
 			<p> 
