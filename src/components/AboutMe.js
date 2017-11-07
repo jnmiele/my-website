@@ -3,12 +3,15 @@ import React from 'react'
 const AboutMe = () => {
 	return(
 		<div id='description'>
-			<h3> My Story </h3>
+			<h2> My Story </h2>
+			<h3>Shortened Version</h3>
 			<p> 
-				Short Version: I'm a video game nerd turned full-stack developer with a passion for programming aiming to help businesses improve their bottom line 
-				by creating interactive products that drive sales and customer satisfaction. 
+				<span>I'm a video game nerd turned full-stack developer with a passion</span><br/> 
+				<span>for programming aiming to help businesses improve their bottom line</span><br/> 
+				<span>by creating interactive products that drive sales and customer satisfaction. </span><br/>
 			</p>
 			<p>__ __ __</p>
+			<h3> Extended Version </h3>
 			<p> 
 				As nerdy as it may sound, my passion for coding began at a young age spending countless hours playing Warcraft III.
 				The time I invested into Warcraft III was mostly in the 'World Editor' tool that Blizzard provided you with.
@@ -31,7 +34,7 @@ const AboutMe = () => {
 			</p>
 
 			<p>
-				I look forward to the next step of my journey, and welcome anyone who would like to join me.
+				I look forward to the next step of my journey, and welcome anyone who would like to join me along the way.
 			</p>
 		</div>
 	)

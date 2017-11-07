@@ -29,10 +29,60 @@
 
 #description {
   margin: auto;
+  padding: 3%;
   margin-top: 5%;
   overflow: scroll;
-  height: 85vh;
-  width: 40%;
+  height: 75vh;
+  width: 50%;
   font-size: 1.5em;
   border: solid .02em;
+}
+
+#header {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 4em;
+}
+
+#nav-bar {
+  padding-top: .5%;
+  padding-bottom: .5%;
+  border-top: solid .5px;
+}
+
+.nav-item {
+  display: inline;
+  font-size:20px;
+  padding-left: 5%;
+}
+
+#first-nav-item {
+  display: inline;
+  font-size:20px;
+}
+
+#resume {
+  overflow: scroll;
+  padding-top: 2%;
+  padding-left: 2%;
+  margin-top: 1%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: left;
+  font-size: 1.25em;
+  border: solid .02em;
+  height: 75vh;
+}
+
+#home {
+  padding-top: 3%;
+}
+
+#professional-work {
+  margin-top: 3%;
+}
+
+.ui.button {
+  margin-left: 1%;
+  margin-right: 1%;
 }

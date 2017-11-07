@@ -4,9 +4,9 @@ import { Button, Header, Image, Modal } from 'semantic-ui-react'
 const ProjectModal = (props) => {
 
   function handleClick(event) {
-    if (event.target.id === 'open-modal') {
+    if (event.target.dataset.name === 'open-modal') {
       props.openModal(props.id)
-    } else if (event.target.id === 'close-modal') {
+    } else if (event.target.dataset.name === 'close-modal') {
       props.closeModal()
     }
   }
@@ -27,7 +27,7 @@ const ProjectModal = (props) => {
   
   return (
     <Modal 
-    trigger={<Button id='open-modal' onClick={handleClick}>{props.name}</Button>}
+    trigger={<Button data-name='open-modal' onClick={handleClick}>{props.name}</Button>}
     open={props.open}
     >
       <Modal.Header>{props.name}</Modal.Header>
@@ -40,10 +40,11 @@ const ProjectModal = (props) => {
           <p>Web Tools Utilized:</p>
           <ul>{displayWebTools()}</ul>
           <p> Code available on <a href={props.github} target='_blank'>github</a></p>
+          <p> Project demo videos coming soon!</p>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
-        <Button id='close-modal' onClick={props.closeModal}>Close</Button>
+        <Button data-name='close-modal' onClick={props.closeModal}>Close</Button>
       </Modal.Actions>
     </Modal>
   ) 
