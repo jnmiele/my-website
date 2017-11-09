@@ -15,7 +15,7 @@ const projects = [
         github: 'https://github.com/jnmiele/restaurant-tracker',
         tools: ['Ruby', 'Ruby on Rails', 'JavaScript', 'React', 'Yelp Search API'],
         url: 'youtubeurl2',
-        image: 'images/hh.png'
+        image: 'images/ts.png'
       },
       {
         name: 'Hitchhiker',
