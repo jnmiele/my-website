@@ -1,102 +1,325 @@
+@font-face {
+  font-family: 'Harboro';
+  src: url('./assets/fonts/HaboroSoftNormRegular.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecento';
+  src: url('./assets/fonts/NovecentoSansWideNormal.otf') format('opentype');
+  font-style: normal;
+}
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-#description {
-  margin: auto;
-  padding: 3%;
-  margin-top: 5%;
-  overflow: scroll;
-  height: 75vh;
-  width: 50%;
-  font-size: 1.5em;
-  border: solid .02em;
-}
-
-#header {
-  padding-top: 2%;
   padding-bottom: 2%;
-  font-size: 4em;
 }
 
-#nav-bar {
-  padding-top: .5%;
-  padding-bottom: .5%;
-  border-top: solid .5px;
+/* end static styling */
+
+.project-header {
+  float: none;
 }
+
+.video-container-16x9 {
+  width: 100%;
+  height: 80vh;
+}
+
+.actions {
+  margin-bottom: 2%;
+}
+
+.close-modal-button {
+  float: right;
+  background-color: transparent;
+  color: #516772;
+  border-radius: 2px;
+  border: solid .1em;
+  border-color: #516772;
+  font-family: 'Harboro';
+}
+
+.close-modal-button:hover {
+  background-color: #516772;
+  color: white;
+  border: solid .1em;
+  border-color: black;
+  cursor: pointer;
+} 
+
+/* NAVBAR STYLING */
+#nav-bar {
+  color: #516772;
+  background-color: white;
+  font-size:1.25em;
+  height: 3em;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+
+.social-media-icon {
+  vertical-align: middle;
+  width: 20px;
+}
+
+#nav-bar-right {
+  float: right;
+}
+
+#nav-bar-left {
+  float: left;
+  width: 75%;
+}
+
+#site-title {
+  float: left;
+  padding-left: 5.5%;
+  padding-right: 2%;
+  vertical-align: middle;
+  font-size: 1.75em;
+  line-height: 1.5em;
+  font-family: 'Novecento';
+}
+
 
 .nav-item {
   display: inline;
-  font-size:20px;
-  padding-left: 5%;
+  vertical-align: middle;
+  font-size: .75em;
+  line-height: 4em;
+  font-weight: 300;
 }
 
-#first-nav-item {
+.nav-link {
+  color: #516772;
+}
+
+.nav-link-bold {
+  color: #516772;
+  font-weight: 800;
+}
+/* END NAVBAR STYLING */
+
+
+/* LANDING PAGE STYLING */
+#profile-picture {
+  height: 100vh;
+  width: 50vw;
+}
+
+#home-left-side {
+  float: left;
+  width: 50%;
+  height: 100vh;
+}
+
+#home-right-side {
+  float: right;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  background-color: #fafafa;
+}
+
+#my-name {
+  margin-top: 5%;
+  font-family: 'Novecento';
+  font-size: 5em;
+  line-height: 2em;
+  color: #516772;
+  font-weight: 400;
+}
+
+#my-role {
+  font-family: 'Harboro';
+  font-size: 1.5em;
+  color: #516772;
+}
+
+.home-buttons {
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 15%;
+  height: 60vh;
+}
+
+.button {
+  background-color: transparent;
+  color: #516772;
+  border-radius: 2px;
+  display: block;
+  border: solid .1em;
+  border-color: #516772;
+  font-family: 'Harboro';
+}
+
+.button-text {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.15em;
+}
+
+.button:hover {
+  background-color: #516772;
+  color: white;
+  border: solid .1em;
+  border-color: black;
+  cursor: pointer;
+}
+
+.divider{
+  width:1.5em;
+  height:auto;
+  display:inline-block;
+}
+
+.social-media-container {
+  position: bottom;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.social-media {
   display: inline;
-  font-size:20px;
+}
+/* END LANDING PAGE STYLING */
+
+
+/* BEGIN PORTFOLIO STYLING */
+.project {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding-left: 11%;
+  padding-right: 7%;
+  display: table;
 }
 
-#resume {
-  overflow: scroll;
-  padding-top: 2%;
-  padding-left: 2%;
-  margin-top: 1%;
-  margin-left: 25%;
-  margin-right: 25%;
-  text-align: left;
-  font-size: 1.25em;
-  border: solid .02em;
-  height: 75vh;
+.row {
+  display: table-row;
 }
 
-#home {
-  padding-top: 3%;
+.project-left {
+  width: 40em;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-#professional-work {
-  margin-top: 3%;
+.project-header {
+  line-height: 1em;
+  padding-bottom: 2%;
+}
+
+.project-title {
+  font-size: 1.75em;
+  line-height: 1em;
+  display: inline;
+  vertical-align: middle;
+  padding-right: 2%;
+  font-family: 'Novecento';
+}
+
+.project-modal {
+  display: inline;
+}
+
+.demo-button {
+  background-color: transparent;
+  color: #516772;
+  border-radius: .1em;
+  border: solid .1em;
+  border-color: #516772;
+  font-family: 'Harboro';
+  font-size: .8em;
+  padding: 1%;
+}
+
+.demo-button:hover {
+  background-color: #516772;
+  color: white;
+  border: solid .1em;
+  border-color: black;
+  cursor: pointer;
+}
+
+.project-description {
+  display: table-cell;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1em;
+  font-family: 'Harboro';
+  line-height: 1.25em;
+  width: 40em;
+}
+
+.project-body {
+  width: 70%;
+}
+
+.project-bullets {
+  font-size: .9em;
+  width: 70%;
 }
 
 .project-image {
-  margin-left: 1%;
-  margin-right: 1%;
-  border-radius: 25px;
-  border: solid .09em;
-  width: 242.48px;
-  height: 162.47px;
+  border-radius: .2em;
+  width: 30em;
+  height: 17em;
 }
 
-.project-image:hover {
-  -moz-box-shadow: 0 0 80px #ccc;
-  -webkit-box-shadow: 0 0 80px #ccc;
-  box-shadow: 0 0 80px #ccc;
+.page-title {
+  text-align: left;
+  font-size: 6em;
+  color: #516772;
+  padding-bottom: .35em;
+}
+/* END PORTFOLIO STYLING */
+
+/* BEGIN ABOUTME STYLING */
+
+#aboutme-picture {
+  width:100%;
+  height: 90vh;
 }
 
-#profile-picture {
-  border-radius: 25px;
+#aboutme-left-side {
+  float: left;
+  width: 50%;
+  height: 90vh;
 }
+
+#aboutme-right-side {
+  float: right;
+  width: 50%;
+  height: 90vh;
+  position: relative;
+}
+
+#my-story {
+  background-color: transparent;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Harboro';
+  color: #516772;
+  border-radius: 25px;
+  padding-top: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  overflow: scroll;
+  height: 90vh;
+}
+
+.aboutme-title {
+  font-family: 'Novecento';
+}
+/* END ABOUTME STYLING */
+
+/* START BLOG STYLING */
+#blog-body {
+  float: left;
+  width: 100%;
+}
+/* END BLOG STYLING */

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import { Modal } from 'semantic-ui-react'
 
 const ProjectModal = (props) => {
 
@@ -10,41 +10,16 @@ const ProjectModal = (props) => {
       props.closeModal()
     }
   }
-
-  function displayBullets() {
-    if (props.bullets && props.bullets.length > 0) {
-      const details = props.bullets.map((bullet, index) => <li key={index}> {bullet} </li>)
-      return details
-    }
-  }
-
-  function displayWebTools() {
-    if (props.tools && props.tools.length > 0) {
-      const tools = props.tools.map((tool, index) => <li key={index}> {tool} </li>)
-      return tools
-    }
-  }
- 
+  const title = `youtube-vid-${props.name}`
   return (
     <Modal 
-    trigger={<img src={require(`../${props.image}`)} className='project-image' data-name='open-modal' onClick={handleClick} alt={props.name}/>}
+    trigger={<button className='demo-button' data-name='open-modal' onClick={handleClick}>View Demo</button>}
     open={props.open}
+    onClose={props.closeModal}
     >
-      <Modal.Header>{props.name}</Modal.Header>
-      <Modal.Content image scrolling>
-        <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
-        <Modal.Description>
-          <Header>Description</Header>
-          <p>{props.description}</p>
-          <ul>{displayBullets()}</ul>
-          <p>Web Tools Utilized:</p>
-          <ul>{displayWebTools()}</ul>
-          <p> Code available on <a href={props.github} target='_blank'>github</a></p>
-          <p> Project demo videos coming soon!</p>
-        </Modal.Description>
-      </Modal.Content>
+      <iframe title={title} className='video-container-16x9'src={props.url}/>
       <Modal.Actions>
-        <Button data-name='close-modal' onClick={props.closeModal}>Close</Button>
+        <button className='close-modal-button' data-name='close-modal' onClick={props.closeModal}>Close</button>
       </Modal.Actions>
     </Modal>
   ) 
