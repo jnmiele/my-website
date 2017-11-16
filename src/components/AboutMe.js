@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
+import NavSelector from './NavSelector'
 
 const AboutMe = () => {
 	return(
 		<div>
-			<NavBar/>
+			<NavSelector/>
 			<div id='aboutme'>
 				<div id='aboutme-left-side'>
 					<img id='aboutme-picture' src={require('../images/aboutme.png')} alt='aboutme'/>
@@ -38,7 +38,7 @@ const AboutMe = () => {
 						<p>
 							My time at UPS ended April of 2017 when I finally decided to pull the trigger on changing career paths.
 							I had been surrounded by a few programmers who were loving every minute of what they did and I may have them to thank for prompting me to start my journey.
-							Since my departure from UPS I've taken online courses in Python and attended a full-stack web development immersive offered by the Flatiron School, where I learned
+							Since my departure from UPS I've taken online courses in Python and attended a full-stack web development immersive offered by the Flatiron School. There, I learned
 							valuable web-development skills like building databases and APIs with Ruby and Ruby on Rails and designing responsive and user-friendly front ends with JavaScript,
 							React, and Redux.
 						</p>

@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const NavBar = () => {
-	console.log()
+const NavBar = () => {	
 	return(
 		<div id='nav-bar'>
 			<div id='nav-bar-left'>
 				<div id='site-title'>
-					James Miele
+					<Link to='/'>James Miele</Link>
 				</div>
 				<div className='nav-item'>
 					<Link className='nav-link' to='/'>Welcome</Link>
@@ -57,5 +56,7 @@ const NavBar = () => {
 		</div>
 	)
 }
-
 export default NavBar
+
+
+		

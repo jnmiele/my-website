@@ -1,7 +1,7 @@
 import React from 'react'
 import Project from './Project'
 import { projects } from '../assets/projects'
-import NavBar from './NavBar'
+import NavSelector from './NavSelector'
 
 class Portfolio extends React.Component {
   state = {
@@ -46,7 +46,7 @@ class Portfolio extends React.Component {
     })
     return(
       <div>
-        <NavBar/>
+        <NavSelector />
         <div id='projects'>
           {projectList}
         </div>
